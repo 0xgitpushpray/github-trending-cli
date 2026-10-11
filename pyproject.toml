@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trending-repos"
+dynamic = ["version"]
+description = "CLI tool that lists trending GitHub repositories by time range."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+trending-repos = "trending_repos.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "trending_repos.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
