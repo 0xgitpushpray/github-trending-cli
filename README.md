@@ -1,4 +1,4 @@
-# trending-repos
+# github-trending-cli
 
 A small command-line tool that shows trending GitHub repositories for a time range
 (day, week, month or year), sorted by star count.
